@@ -1,0 +1,333 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Email App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col">
+   <!-- Header -->
+   <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Company logo, a stylized letter 'C' in blue and white" class="h-10 w-10 mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/T6zZcTD3XTreHCQnjscp1OWyi0loSyfWp4k2nt5XKJksX69TA.jpg" width="40"/>
+     <h1 class="text-xl font-bold">
+      Email App
+     </h1>
+    </div>
+    <div class="flex items-center space-x-4">
+     <button class="focus:outline-none">
+      <i class="fas fa-search">
+      </i>
+     </button>
+     <button class="focus:outline-none">
+      <i class="fas fa-bell">
+      </i>
+     </button>
+     <button class="focus:outline-none">
+      <i class="fas fa-user-circle">
+      </i>
+     </button>
+    </div>
+   </header>
+   <!-- Main Content -->
+   <div class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="bg-white w-64 p-4 hidden md:block">
+     <nav>
+      <ul class="space-y-2">
+       <li>
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-inbox mr-2">
+         </i>
+         Inbox
+        </a>
+       </li>
+       <li>
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-star mr-2">
+         </i>
+         Starred
+        </a>
+       </li>
+       <li>
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-paper-plane mr-2">
+         </i>
+         Sent
+        </a>
+       </li>
+       <li>
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-trash mr-2">
+         </i>
+         Trash
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </aside>
+    <!-- Email List -->
+    <main class="flex-1 p-4">
+     <div class="bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-bold mb-4">
+       Inbox
+      </h2>
+      <ul class="space-y-4">
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of John Doe, a man with short brown hair and glasses" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/98mn9ky2PrZtCJuuhZXcrjSb78nGiGBSgAQotlOeJQt3L9eTA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           John Doe
+          </h3>
+          <p class="text-gray-600">
+           Meeting at 3 PM
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         2 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Jane Smith, a woman with long blonde hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/Un9cNLz2YbowA9MxF3BWzAYgfBSM8CyjwLGiMmDY7uJDM9eTA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Jane Smith
+          </h3>
+          <p class="text-gray-600">
+           Project Update
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         4 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Michael Brown, a man with short black hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/bH017sqMpMooExUjPUGzMvpAQxANlb1CrmqZLmNsJbUfL9eTA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Michael Brown
+          </h3>
+          <p class="text-gray-600">
+           Lunch Tomorrow?
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         6 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Emily Davis, a woman with short red hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/1TQwJA1KWpIeZy8CfAK4x5LUi7eDXtyr34Zro0ljqrp2v07nA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Emily Davis
+          </h3>
+          <p class="text-gray-600">
+           New Design Mockups
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         8 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of David Wilson, a man with curly brown hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/tBkVdHdCWc7yJ9dgnfrA5rC0X8ZEfrX2f1fmheqcW65BfleeTA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           David Wilson
+          </h3>
+          <p class="text-gray-600">
+           Weekly Report
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         10 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Sarah Johnson, a woman with long black hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/PuP9X8ugVeyHXq1XAHA6hekAnxZCbUNTRyRs6e7EelEqfSvfE.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Sarah Johnson
+          </h3>
+          <p class="text-gray-600">
+           Client Feedback
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         12 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Chris Lee, a man with short black hair and glasses" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/MPXFyCecgGxzUSzebdMmeoI0YiO6aj9OtFMyyeC1QRu3eSvfE.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Chris Lee
+          </h3>
+          <p class="text-gray-600">
+           Team Meeting
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         14 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Laura Martinez, a woman with short brown hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/2lotA6AUZwYbMpvU6faE4W2z8Sk3gLNez8JNnw8G44ofv07nA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Laura Martinez
+          </h3>
+          <p class="text-gray-600">
+           Budget Review
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         16 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Kevin White, a man with short blonde hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/iFpxfJkCrXRXByfVGtCUtq42hERevGjQ1PxgFxVQLLWtv07nA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Kevin White
+          </h3>
+          <p class="text-gray-600">
+           New Opportunities
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         18 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Anna Brown, a woman with long curly hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/9arIibCxJsbxKFOKVje2ZOdAMd5auQtVzF4LvEeQuRJBY69TA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Anna Brown
+          </h3>
+          <p class="text-gray-600">
+           Follow Up
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         20 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Mark Taylor, a man with short gray hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/xH1qjxJYGVYtLR2tHurf8BkRsPlUxkecjIqGYnEgbNu0X69TA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Mark Taylor
+          </h3>
+          <p class="text-gray-600">
+           Meeting Rescheduled
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         22 hours ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Lisa Green, a woman with short black hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/lrwRQCRJ02ZAOVOHKC3ARfZ4e2Ue4FHEpqr4nLKs4KJjv07nA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Lisa Green
+          </h3>
+          <p class="text-gray-600">
+           Invoice Attached
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         1 day ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Tom Harris, a man with short brown hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/tIXCYI6PcdYjMVuhccppSFdCfffnmMe2Q9CeY1jz0I9hATvfE.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Tom Harris
+          </h3>
+          <p class="text-gray-600">
+           Contract Signed
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         2 days ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Nancy King, a woman with long blonde hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/VIfQKVqkG8XHZSeImtdYHq4Hbys3jGwwscCT0DBsPxdzX69TA.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Nancy King
+          </h3>
+          <p class="text-gray-600">
+           Event Invitation
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         3 days ago
+        </span>
+       </li>
+       <li class="flex items-center justify-between p-2 border-b">
+        <div class="flex items-center">
+         <img alt="Profile picture of Paul Walker, a man with short black hair" class="h-10 w-10 rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/bBKyb1qzeYwRb6geEPNfZlJ3RLeooqxbIrr0zkfkLpXdATvfE.jpg" width="40"/>
+         <div>
+          <h3 class="font-bold">
+           Paul Walker
+          </h3>
+          <p class="text-gray-600">
+           New Project Proposal
+          </p>
+         </div>
+        </div>
+        <span class="text-gray-500">
+         4 days ago
+        </span>
+       </li>
+      </ul>
+     </div>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
